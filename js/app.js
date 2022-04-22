@@ -1,9 +1,9 @@
 /**
   Controlador principal de la aplicación.
 **/
-import {Rest} from './servocios/rest.js'
+import {Rest} from './servicios/rest.js'
 import {VistaLogin} from './vistas/vistalogin.js'
-import {VistaMenuPricipal} from './vistas/vistaMenuPricipal.js'
+import {VistaMenuPrincipal} from './vistas/vistamenuprincipal.js'
 
 class App{
   /**
@@ -18,14 +18,14 @@ class App{
   **/
   iniciar(){
     this.vistaLogin = new VistaLogin(this, document.getElementById('divLogin'))
-    this.vistaMenuPrincipal = new VistaMenuPricipal(this, document.getElementById('divMenuPrincipal'))
+    this.vistaMenuPrincipal = new VistaMenuPrincipal(this, document.getElementById('divMenuPrincipal'))
   }
   /**
     Envía los datos de login al backend. Si el login es correcto, oculta la vista de login y muestra la vista de menú principal.
   **/
   login(usuario, clave){
     const login = {
-      'email': email,
+      'usuario': usuario,
       'clave': clave
     }
     Rest.post('login', login)
