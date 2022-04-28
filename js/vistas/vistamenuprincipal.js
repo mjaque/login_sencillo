@@ -1,5 +1,5 @@
 /**
-  Vista del Menú Principal.
+  Vista del Menú Principal..
 **/
 
 export class VistaMenuPrincipal{

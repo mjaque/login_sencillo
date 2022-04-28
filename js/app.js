@@ -3,7 +3,7 @@
 **/
 import {Rest} from './servocios/rest.js'
 import {VistaLogin} from './vistas/vistalogin.js'
-import {VistaMenuPricipal} from './vistas/vistaMenuPricipal.js'
+import {VistaMenuPricipal} from './vistas/vistamenupricipal.js'
 
 class App{
   /**
